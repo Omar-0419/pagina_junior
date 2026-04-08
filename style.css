@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+a{
+    text-decoration: none;
+     color: #000000;
+     transition: text-shadow 1s;
+}
+
+.div-navegacion{
+    background-color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 4px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+a:hover{
+    text-shadow: 1px  0px 10px #ff8190,
+                0px  1px 10px #ff8190,
+                -1px  0px 5px #ff8190,
+                0px -1px 0px #ff8190;
+    
+}
+
+.contenedor-principal{
+    display: flex;
+    gap: 20px;
+}
+
+.header-pagina {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 3px solid #ce1126;
+    position: sticky;
+    top: 0;
+    
+}
+
+.footer-pagina{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-top: 3px solid #ce1126;
+}
+
+nav{
+    height: 25px;
+    position: fixed;
+    left: 0;
+    width: 100%; 
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d11a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* flex-direction: column; */
+}
+
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 16px 50px #ffffff70;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(167, 0, 0, 0.74);
+}
+
+/* .foto-perfil {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 50%; 
+    margin: 0 auto 1rem;
+} */
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.habilidades {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    background-color: #ff8d8d;
+    color: #000000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+
+}
+
+.btn-contacto {
+    margin-top: 2rem;
+    background-color: #ff2525;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-contacto:active {
+    background-color: #e05555;
+}
