@@ -1,8 +1,19 @@
+@keyframes scroll-escudos{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-25%);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
+
+
 
 a{
     text-decoration: none;
@@ -20,12 +31,27 @@ a{
     width: 100%;
 }
 
-a:hover{
-    text-shadow: 1px  0px 10px #ff8190,
-                0px  1px 10px #ff8190,
-                -1px  0px 5px #ff8190,
-                0px -1px 0px #ff8190;
+.carrusel-padre{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrusel{
+    display: flex;
+    width: max-content;
+    gap: 160px;
+    animation: scroll-escudos 10s linear infinite;
+}
+
+.escudo_junior{
+    width: 30px;
+    height: 30px;
+}
+
+.enlace:hover{
+    transform: scale(1.5);
     
+
 }
 
 .contenedor-principal{
@@ -34,13 +60,20 @@ a:hover{
 }
 
 .header-pagina {
-    text-align: center;
     padding: 40px 20px;
     background-color: #f8f9fa;
     border-bottom: 3px solid #ce1126;
-    position: sticky;
     top: 0;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+    margin-top: 0;
+}
+
+.titulo-subtitulo{
+    text-align: center;
 }
 
 .footer-pagina{
@@ -52,7 +85,7 @@ a:hover{
 
 nav{
     height: 25px;
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%; 
 }
@@ -88,7 +121,7 @@ main {
     transform: translateY(-10px);
 }
 
-img{
+#teo, #luis-diaz, #viera, #bacca{
     width: 100px;
     height: 100px;
     object-fit: cover;
