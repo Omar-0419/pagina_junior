@@ -1,0 +1,191 @@
+@keyframes scroll-escudos{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-25%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+
+a{
+    text-decoration: none;
+     color: #000000;
+     transition: text-shadow 1s;
+}
+
+.div-navegacion{
+    background-color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 4px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.carrusel-padre{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrusel{
+    display: flex;
+    width: max-content;
+    gap: 160px;
+    animation: scroll-escudos 10s linear infinite;
+}
+
+.escudo_junior{
+    width: 30px;
+    height: 30px;
+}
+
+.enlace:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.enlace{
+    transition: 0.3s;
+}
+
+.contenedor-principal{
+    display: flex;
+    gap: 20px;
+}
+
+.header-pagina {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-right: 3px solid #ce1126;
+    border-bottom: 3px solid #ce1126;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+    gap: 40px;
+}
+
+body{
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo-subtitulo{
+    text-align: center;
+}
+
+.footer-pagina{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-top: 3px solid #ce1126;
+}
+
+nav{
+    height: 25px;
+    position: absolute;
+    left: 0;
+    width: 100%; 
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* flex-direction: column; */
+}
+
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    padding: 1rem;
+    padding-top: 70px;
+    border-radius: 15px;
+    box-shadow: 0 16px 50px #ffffff70;
+    text-align: center;
+    transition: transform 0.3s ease;
+    min-height: 580px;
+
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+#teo, #luis-diaz, #viera, #bacca, #superliga{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0 5px 20px rgba(167, 0, 0, 0.74);
+}
+
+/* .foto-perfil {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 50%; 
+    margin: 0 auto 1rem;
+} */
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.habilidades {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    background-color: #ff8d8d;
+    color: #000000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+
+}
+
+.btn-contacto {
+    margin-top: 2rem;
+    background-color: #ff2525;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-contacto:active {
+    background-color: #e05555;
+}
