@@ -48,10 +48,13 @@ a{
     height: 30px;
 }
 
-.enlace:hover{
+.enlace:hover, .enlace-training:hover{
     transform: scale(1.5);
-    
+    transition: 0.3s;
+}
 
+.enlace, .enlace-training{
+    transition: 0.3s;
 }
 
 .contenedor-principal{

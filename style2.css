@@ -17,8 +17,8 @@
 
 a{
     text-decoration: none;
-     color: #000000;
-     transition: text-shadow 1s;
+    color: #000000;
+    transition: text-shadow 1s;
 }
 
 .div-navegacion{
@@ -48,12 +48,12 @@ a{
     height: 30px;
 }
 
-.enlace:hover{
+.enlace-home:hover, .enlace-training:hover{
     transform: scale(1.5);
     transition: 0.3s;
 }
 
-.enlace{
+.enlace-home, .enlace-training{
     transition: 0.3s;
 }
 
